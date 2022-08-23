@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santidev21</title>
+    <link rel="stylesheet" href="css/reset.css"> 
+    <link rel="stylesheet" href="css/style.css">     
+	<link rel="icon" type="image/png" href="images/favicon.png">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <a class="nav-logo" href="#"><span>Santidev21</span></a>
+        <button class="nav-button">
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+        <nav class="nav-bar active">
+             <ul class="nav-items">
+                <li class="active"><a href="#home" title="">Home</a></li>
+                <li><a href="#about" title="">About</a></li>
+                <li><a href="#projects" title="">Projects</a></li>				
+                <li><a href="#contact" title="">Contact</a></li>					
+            </ul>
+        </nav>               
+    </header>
+
+    <section id="home">   
+        <div class="intro-content">
+            <h5 class="hello-world">Hello World</h5>
+            <h1>I'm Santiago Orozco Restrepo.</h1>
+            <p class="intro-position">
+                <span>Biomedical Engineer</span>
+                <span>Web Developer</span> 
+            </p>
+            <a class="" href="#about" title="">More About Me</a>		 		
+        </div>	
+    </section>
+
+    <section id="about">  
+        <div class="about-intro">
+            <h5 class="title">About</h5>
+            <h1 class="sub-title">Let me introduce myself.</h1>
+            <div>
+                <img src="images/profile-pic.jpg" alt="Profile Picture">
+            </div>
+            <p>I am a young man passionate about technology, who likes to be constantly learning. My hobbies are play chess, guitar, go out with my friends and study new subjects.</p>
+            
+        </div>
+        <div class="about-skills">
+                <h3>Skills</h3>
+                <ul class="skill-bars">
+                    <li>
+                        <div class="progress percent100"><span>100%</span></div>
+                        <strong>HTML5</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent100"><span>100%</span></div>
+                        <strong>CSS3</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent100"><span>70%</span></div>
+                        <strong>JavaScript</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent90"><span>90%</span></div>
+                        <strong>Angular</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent70"><span>70%</span></div>
+                        <strong>MongoDB</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent70"><span>70%</span></div>
+                        <strong>mySQL</strong>
+                    </li>
+                </ul>
+        </div>
+        <div class="button-section">
+            <a href="#contact" id="hire-me" title="Hire Me" class="button">Hire Me</a>
+            <a href="docs/CV_Portfolio.pdf" id="cv" target="_blank" title="Download CV" class="button button-primary">Download CV</a>		
+        </div>
+    </section>
+
+    <section id="projects">  
+        <div class="projects-info">
+            <h5 class="title">Projects</h5>
+            <h1 class="sub-title">Check out some of my works.</h1>
+            <div class="center-projects">
+                <div class="projects-list">
+                    <div class="container-projects">
+                        <img src="./images/projects/pj_portfolio.PNG" alt="Portfolio project">
+                        <div class="project-list-overlay project-blur">
+                            <h3>Portfolio</h3>
+                            <div class="links-projects">
+                                <a href="https://github.com/santidev21/portfolio" target="_blank">
+                                    <img src="./images/github.png" alt="GitHub icon">
+                                </a>
+                                <a href="#home">
+                                    <img src="./images/web.png" alt="Web icon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-projects">
+                        <img src="./images/projects/pj_todo.PNG" alt="Portfolio project">
+                        <div class="project-list-overlay project-blur">
+                            <h3>To do</h3>
+                            <div class="links-projects">
+                                <a href="https://github.com/santidev21/To-do" target="_blank">
+                                    <img src="./images/github.png" alt="GitHub icon">
+                                </a>
+                                <a href="https://santidev21.github.io/To-do/" target="_blank">
+                                    <img src="./images/web.png" alt="Web icon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-projects">
+                        <img src="./images/projects/pj_google.png" alt="Portfolio project">
+                        <div class="project-list-overlay project-blur">
+                            <h3>Google mockup</h3>
+                            <div class="links-projects">
+                                <a href="https://github.com/santidev21/Google-mockup" target="_blank">
+                                    <img src="./images/github.png" alt="GitHub icon">
+                                </a>
+                                <a href="https://santidev21.github.io/Google-mockup/" target="_blank">
+                                    <img src="./images/web.png" alt="Web icon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-projects">
+                        <img src="./images/projects/pj_podcast.png" alt="Portfolio project">
+                        <div class="project-list-overlay project-blur">
+                            <h3>Podcast project</h3>
+                            <div class="links-projects">
+                                <a href="https://github.com/santidev21/Podcast-project" target="_blank">
+                                    <img src="./images/github.png" alt="GitHub icon">
+                                </a>
+                                <a href="https://santidev21.github.io/Podcast-project/" target="_blank">
+                                    <img src="./images/web.png" alt="Web icon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact-container">
+            <h5 class="title">Contact</h5>
+            <h1 class="sub-title">I would love to talk to you!</h1> 
+            <fomr class="contact-form">
+                <input type="text" name="name" placeholder="Name">
+                <input type="email" name="email" placeholder="Email">
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea name="message" placeholder="Message"></textarea>
+                <button>Send</button>
+            </fomr>
+        </div>      
+    </section>
+    <footer>
+        <div class="footer">
+            <span>Created by santidev21</span>
+            <a href="https://www.linkedin.com/in/santiagoor/" target="_blank">
+                <img src="./images/linkedin.png" alt="linkedin icon">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
