@@ -151,14 +151,14 @@ body{
 
 /*----------------About------------------*/
 #about{
-    padding: 60px 0;
+    padding-top: 60px;
     width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 .about-intro{
-    margin-top: 60px;
+    padding-top: 60px;
     width: 100%;
     display: grid;
     justify-content: center;
@@ -303,10 +303,11 @@ body{
 
 /*------------Projects---------------*/
 #projects{
-    padding: 60px 0;
+    padding-top: 60px;
     width: 100%;
 }
 .projects-info{
+    padding-top: 60px;
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -386,11 +387,12 @@ body{
 }
 /*-------Contact-----------------*/
 #contact{
-    padding: 60px 0;
+    padding-top: 60px;
     width: 100%;
     background-color: var(--footer-black);
 }
 .contact-container{
+    padding-top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
