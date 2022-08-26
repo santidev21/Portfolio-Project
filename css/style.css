@@ -13,7 +13,6 @@
     --white: #EEEBDD;
     --black: #000000;
     --ligth-black: #313131;
-    --footer-black: #151515;
     --text-color: #888888;
     --bf: 32px;
     --mf: 24px;
@@ -67,14 +66,13 @@ body{
 
 /*Home*/
 #home{
-    background: var(--black) url(../images/try.jpg) no-repeat center bottom;
+    background: var(--black) url(../images/backimage.jpg) no-repeat center bottom;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	background-attachment: fixed;
 	width: 100%;
-	height: 100%;
-	min-height: 720px;
+	height: 100vh;
 	display: table;
 	position: relative;
 	text-align: center;
@@ -278,7 +276,7 @@ body{
 
 .button-section{
     display: grid;
-    grid-template-columns: 20% 30% 30% 20%;
+    grid-template-columns: 10% 40% 40% 10%;
     grid-template-rows: auto;
     justify-items: center;
 }
@@ -300,14 +298,23 @@ body{
 .button-section .button:hover{
     border: 3px solid var(--primary-color);
 }
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /*------------Projects---------------*/
 #projects{
-    padding-top: 60px;
+    padding: 60px 0;
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 .projects-info{
+    width: 80%;
     padding-top: 60px;
+    border-top: 3px solid var(--primary-color);
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -385,81 +392,38 @@ body{
     grid-row: 2;
     grid-column: 3;
 }
-/*-------Contact-----------------*/
-#contact{
-    padding-top: 60px;
-    width: 100%;
-    background-color: var(--footer-black);
-}
-.contact-container{
-    padding-top: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.contact-container .sub-title{
-    color: var(--white);
-}
-.contact-container .contact-form{
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.contact-container .contact-form > *{
-    margin: 10px;
-}
-.contact-container .contact-form textarea{
-    height: 140px;
-}
-.contact-container .contact-form button{
-    width: 150px;
-    height: 40px;
-    background-color: var(--primary-color);
-    color: var(--white);
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 20px;
-}
+
 /*------------------ FOOTER ----------------*/
 footer{
-    background-color: var(--footer-black);
+    background-color: var(--ligth-black);
     color: var(--white);
     display: flex;
     justify-content: center;
 }
 .footer{
-    width: 70%;
+    width: 100%;
     border-top: 1px solid var(--ligth-black);
-    padding-top: 10px;
+    padding: 5px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
 }
-footer img{
-    padding-top: 10px;
+.footer .social-footer{
+    padding-right: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.footer a{
+    padding: 0 10px;
+}
+.footer img{
     width: 30px;
 }
 
 .footer span {
+    padding-left: 30px;
 	display: inline-block;
-}
-.footer span::after {
-	content: "|";
-	text-align: center;
-	display: inline-block;
-	padding: 0 8px 0 14px;
-	color: rgba(255, 255, 255, 0.3);
-}
-.footer span:first-child::before {
-	content: "|";
-	text-align: center;
-	display: inline-block;
-	padding: 0 14px 0 8px;
-	color: rgba(255, 255, 255, 0.3);
 }
 /* -------------- RESPONSIVE --------------*/
 
@@ -542,6 +506,9 @@ footer img{
     }
     .button-section .button{
         padding: 5px 10px;
+    }
+    .projects-info{
+        width: 100%;
     }
     .projects-info .projects-list{
         width: 70%;
