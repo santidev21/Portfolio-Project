@@ -275,23 +275,17 @@ body{
 .skill-bars li .percent100 { width: 100%; }
 
 .button-section{
-    display: grid;
-    grid-template-columns: 10% 40% 40% 10%;
-    grid-template-rows: auto;
-    justify-items: center;
+    display: flex;
+    justify-content: center;
 }
-#hire-me{
-    grid-column: 2;
-}
-#cv{
-    grid-column: 3;
+.button-section #cv{
     background-color: var(--ligth-black);
     color: var(--white);
 }
 .button-section .button{
     border: 3px solid var(--ligth-black);
     padding: 15px 60px;
-    width: 70%;
+    width: 300px;
     text-align: center;
     font-weight: bold;
 }
@@ -399,6 +393,7 @@ footer{
     color: var(--white);
     display: flex;
     justify-content: center;
+    height: 60px;
 }
 .footer{
     width: 100%;
@@ -506,6 +501,7 @@ footer{
     }
     .button-section .button{
         padding: 5px 10px;
+        width: 180px;
     }
     .projects-info{
         width: 100%;
